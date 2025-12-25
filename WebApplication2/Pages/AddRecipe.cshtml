@@ -1,0 +1,9 @@
+﻿@page
+@{
+    Layout = "_Layout";
+
+    if (HttpContext.Session.GetString("user") == null)
+    {
+        Response.Redirect("/Login");
+    }
+}

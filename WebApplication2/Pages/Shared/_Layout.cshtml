@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>HealthyLife</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🥗 HealthyLife</div>
+        <nav>
+            <a asp-page="/Index">Ana Sayfa</a>
+            <a asp-page="/Recipe/Add">Tarif Ekle</a>
+            @if (Context.Session.GetString("user") == null)
+            {
+                <a asp-page="/Login">Giriş Yap</a>
+                <a asp-page="/Register">Kayıt Ol</a>
+            }
+            else
+            {
+                <span style="color:white; margin-right:10px;">@Context.Session.GetString("user")</span>
+                <a asp-page="/Logout">Çıkış Yap</a>
+            }
+        </nav>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/* ======================== */
+/* GENEL AYARLAR */
+/* ======================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* ======================== */
+/* NAVBAR */
+/* ======================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #27ae60;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+    .navbar a {
+        color: white;
+        margin-left: 20px;
+        font-weight: 500;
+    }
+
+        .navbar a:hover {
+            color: #d1f2eb;
+        }
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ======================== */
+/* HERO SECTION */
+/* ======================== */
+.hero {
+    background: linear-gradient(120deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+/* ======================== */
+/* BUTONLAR */
+/* ======================== */
+.btn-primary {
+    background: #16a085;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background: #1abc9c;
+    }
+
+/* ======================== */
+/* ÖÐÜN / TARÝF BÖLÜMLERÝ */
+/* ======================== */
+.meal-section {
+    margin: 50px 0;
+}
+
+    .meal-section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+    }
+
+.meal-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h4 {
+        margin-bottom: 15px;
+        color: #27ae60;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+/* ======================== */
+/* SAÐLIKLI YAÞAM ÝPUÇLARI */
+/* ======================== */
+.tips {
+    background: #e8f5e9;
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+    .tips ul {
+        list-style: inside disc;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+/* ======================== */
+/* CALL TO ACTION */
+/* ======================== */
+.cta {
+    background: #27ae60;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+/* ======================== */
+/* LOGIN / REGISTER FORMLARI */
+/* ======================== */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.login-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+    .login-container h2 {
+        margin-bottom: 25px;
+        color: #27ae60;
+    }
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+    .form input:focus,
+    .form select:focus {
+        outline: none;
+        border-color: #27ae60;
+        box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+    }
+
+.form button.btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+    .form button.btn-primary:hover {
+        background: #2ecc71;
+    }
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* ======================== */
+/* RESPONSIVE DESIGN */
+/* ======================== */
+@media (max-width: 768px) {
+    .meal-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

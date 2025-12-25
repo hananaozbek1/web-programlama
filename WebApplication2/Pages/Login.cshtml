@@ -1,0 +1,21 @@
+﻿@page
+@model HealthyLife.Pages.LoginModel
+@{
+    Layout = "_Layout";
+}
+
+<div class="login-page">
+    <div class="login-container">
+        <h2>Giriş Yap</h2>
+        <form method="post" class="form">
+            <input asp-for="Username" placeholder="Kullanıcı Adı" required />
+            <input asp-for="Password" type="password" placeholder="Şifre" required />
+            <button type="submit" class="btn-primary">Giriş Yap</button>
+        </form>
+
+        @if (TempData["error"] != null)
+        {
+            <p class="error-message">@TempData["error"]</p>
+        }
+    </div>
+</div>

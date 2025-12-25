@@ -1,0 +1,30 @@
+﻿@page
+@model HealthyLife.Pages.RegisterModel
+@{
+    Layout = "_Layout";
+}
+
+<div class="login-page">
+    <div class="login-container">
+        <h2>Kayıt Ol</h2>
+        <form method="post" class="form">
+            <input asp-for="Username" placeholder="Kullanıcı Adı" required />
+            <input asp-for="Email" type="email" placeholder="E-posta" required />
+            <input asp-for="Password" type="password" placeholder="Şifre" required />
+            <input asp-for="ConfirmPassword" type="password" placeholder="Şifre Tekrar" required />
+            <input asp-for="BirthDate" type="date" placeholder="Doğum Tarihi" required />
+            <select asp-for="Gender" required>
+                <option value="" disabled selected>Cinsiyet</option>
+                <option value="female">Kadın</option>
+                <option value="male">Erkek</option>
+                <option value="other">Diğer</option>
+            </select>
+            <button type="submit" class="btn-primary">Kayıt Ol</button>
+        </form>
+
+        @if (TempData["error"] != null)
+        {
+            <p class="error-message">@TempData["error"]</p>
+        }
+    </div>
+</div>

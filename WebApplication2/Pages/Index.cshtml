@@ -1,0 +1,100 @@
+﻿@page
+@{
+    Layout = "_Layout";
+}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>🥗 Sağlıklı Tarifler, Sağlıklı Yaşam</h1>
+        <p>Kendi yemek tariflerini ekle, sağlıklı beslenmeyi keşfet ve hayatına enerji kat!</p>
+        <a asp-page="/Recipe/Add" class="btn-primary">Tarif Ekle</a>
+    </div>
+</section>
+
+<!-- Sabah Tarifleri -->
+<section class="meal-section">
+    <h2>🌅 Kahvaltı Tarifleri</h2>
+    <div class="meal-cards">
+        <div class="card">
+            <h4>Avokadolu Tam Buğday Tost</h4>
+            <p>Protein ve lif açısından zengin, güne enerji dolu başlamanızı sağlar.</p>
+        </div>
+        <div class="card">
+            <h4>Meyveli Smoothie Bowl</h4>
+            <p>Renkli ve tatlı ihtiyacını karşılayan sağlıklı bir kahvaltı.</p>
+        </div>
+        <div class="card">
+            <h4>Yulaflı Granola</h4>
+            <p>Ev yapımı granola ile doğal enerji ve vitaminler.</p>
+        </div>
+        <div class="card">
+            <h4>Sebzeli Omlet</h4>
+            <p>Lezzetli ve doyurucu, protein deposu bir öğün.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Öğle Tarifleri -->
+<section class="meal-section">
+    <h2>☀️ Öğle Tarifleri</h2>
+    <div class="meal-cards">
+        <div class="card">
+            <h4>Quinoa Salatası</h4>
+            <p>Lif ve protein dengesi yüksek, hafif bir öğle yemeği.</p>
+        </div>
+        <div class="card">
+            <h4>Tavuklu Sebze Bowl</h4>
+            <p>Renkli sebzeler ve ızgara tavuk ile doyurucu bir öğün.</p>
+        </div>
+        <div class="card">
+            <h4>Mercimek Çorbası</h4>
+            <p>Vitamin ve protein açısından zengin, sıcak ve hafif bir seçenek.</p>
+        </div>
+        <div class="card">
+            <h4>Avokadolu Sandviç</h4>
+            <p>Taze sebzeler ve tam tahıllı ekmek ile enerji dolu öğle.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Akşam Tarifleri -->
+<section class="meal-section">
+    <h2>🌙 Akşam Tarifleri</h2>
+    <div class="meal-cards">
+        <div class="card">
+            <h4>Izgara Somon</h4>
+            <p>Omega-3 deposu, hafif ve sağlıklı bir akşam yemeği.</p>
+        </div>
+        <div class="card">
+            <h4>Fırında Sebzeler</h4>
+            <p>Renkli sebzelerle hazırlanan düşük kalorili bir öğün.</p>
+        </div>
+        <div class="card">
+            <h4>Humus ve Tam Buğday Ekmeği</h4>
+            <p>Protein ve lif açısından zengin, doyurucu bir akşam atıştırması.</p>
+        </div>
+        <div class="card">
+            <h4>Yoğurtlu Sebze Salatası</h4>
+            <p>Hafif, ferah ve vitamin deposu bir akşam yemeği seçeneği.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sağlıklı Yaşam İpuçları -->
+<section class="tips">
+    <h2>💡 Sağlıklı Yaşam İpuçları</h2>
+    <ul>
+        <li>Günde 2-3 litre su içmeye özen gösterin.</li>
+        <li>Taze sebze ve meyveleri öğünlerinize dahil edin.</li>
+        <li>Şeker ve işlenmiş gıdaları azaltın.</li>
+        <li>Düzenli egzersiz ile enerjinizi yükseltin.</li>
+        <li>Yeterli uyku ve stres yönetimi sağlıklı yaşamın anahtarıdır.</li>
+    </ul>
+</section>
+
+<!-- Call To Action -->
+<section class="cta">
+    <h2>Başlayın ve Kendi Tariflerinizi Paylaşın!</h2>
+    <a asp-page="/Register" class="btn-primary">Hemen Kayıt Ol</a>
+</section>
